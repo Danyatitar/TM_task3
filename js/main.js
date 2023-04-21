@@ -88,7 +88,6 @@ function searchPlayer() {
     const response = await getPlayer(input.value);
 
     if (response) {
-      console.log(response);
       if (response.error !== undefined) {
         err.classList.remove("hidden");
         err.innerHTML = "Invalid Input!";
