@@ -88,6 +88,7 @@ function searchPlayer() {
     const response = await getPlayer(input.value);
 
     if (response) {
+      console.log(response);
       if (response.error !== undefined) {
         err.classList.remove("hidden");
         err.innerHTML = "Invalid Input!";
@@ -95,14 +96,14 @@ function searchPlayer() {
         removeCards();
         err.classList.add("hidden");
         const p = new Player(
-          response[1].player_name,
-          response[1].player_age,
-          response[1].team_name,
-          response[1].player_rating,
-          response[1].player_match_played,
-          response[1].player_minutes
+          response[response.length - 1].player_name,
+          response[response.length - 1].player_age,
+          response[response.length - 1].team_name,
+          response[response.length - 1].player_rating,
+          response[response.length - 1].player_match_played,
+          response[response.length - 1].player_minutes
         );
-        addCardPlayer(p, response[1].player_image);
+        addCardPlayer(p, response[response.length - 1].player_image);
       }
     } else {
       err.classList.remove("hidden");

@@ -13,10 +13,10 @@ export class Player {
   }
   renderPlayer(img) {
     if (img === "") {
-      img = "../images/default_player.jpg";
+      img = "../TM_task3/images/default_player.jpg";
     }
     return `
-    <img class="card-img" src=${img} alt="Player-image" />
+    <img class="card-img" src=${img} onerror="this.src='../TM_task3/images/default_player.jpg'" alt="Player-image" />
     <h3 class="card-title">${this.name}</h3>
     <ul class="info">
       <li class="info-item">Age: ${this.age}</li>
