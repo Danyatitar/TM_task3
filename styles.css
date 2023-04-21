@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.title {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 44px;
+  font-weight: 700;
+}
+.choose-selectors {
+  margin-top: 20px;
+}
+.search-one-player {
+  text-align: center;
+}
+.input {
+  padding: 10px 20px;
+  width: 250px;
+  border-radius: 20px;
+  font-size: 20px;
+}
+.btn {
+  padding: 10px 15px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 20px;
+  border: none;
+  color: white;
+}
+.btn:hover {
+  cursor: pointer;
+}
+.search-player-btn {
+  background-color: rgb(75, 123, 253);
+  color: white;
+  margin-left: 20px;
+}
+.search-select {
+  margin-top: 20px;
+  text-align: center;
+}
+.league-select {
+  padding: 10px 20px;
+  width: 300px;
+  border-radius: 20px;
+  font-size: 20px;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+select.league-select {
+  background-image: linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position: calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.35em;
+  background-size: 5px 5px, 5px 5px, 1px 1.5em;
+  background-repeat: no-repeat;
+}
+
+select.league-select:focus {
+  background-image: linear-gradient(45deg, green 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, green 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position: calc(100% - 15px) 1em, calc(100% - 20px) 1em,
+    calc(100% - 2.5em) 0.35em;
+  background-size: 5px 5px, 5px 5px, 1px 1.5em;
+  background-repeat: no-repeat;
+  border-color: green;
+  outline: 0;
+}
+
+.league-select-item {
+}
+.buttons {
+  margin-top: 10px;
+}
+.topscorers-btn {
+  background-color: rgb(34, 222, 27);
+}
+.teams-btn {
+  background-color: rgb(34, 222, 27);
+}
+.cards {
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.card,
+.team {
+  width: 270px;
+
+  box-shadow: 4px 11px 23px 0px rgba(0, 0, 0, 0.75);
+}
+.card-img {
+  width: 270px;
+}
+.info {
+  list-style: none;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.info-item {
+  text-align: center;
+  font-size: 22px;
+}
+.more-btn {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  background-color: rgb(75, 123, 253);
+}
+.card-title {
+  margin: 10px 0;
+  text-align: center;
+  font-size: 28px;
+}
+.error {
+  text-align: center;
+  color: red;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 30px;
+}
+.hidden {
+  display: none;
+}
