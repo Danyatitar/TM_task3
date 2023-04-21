@@ -9,9 +9,6 @@ export class Team {
   }
 
   renderTeam(img) {
-    if (img === "") {
-      img = "../images/default-logo.png";
-    }
     return `
       <img class="card-img" src=${img} alt="Team-image" />
       <h3 class="card-title">${this.name}</h3>
